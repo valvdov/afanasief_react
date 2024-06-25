@@ -1,0 +1,91 @@
+.header {
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.header img {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #444;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    padding: 0 1em;
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.active {
+    font-weight: bold;
+    background-color: #555;
+    padding: 0.5em 1em;
+}
+
+.burger-menu-container, .close-icon {
+    display: none; /* Скрываем бургер-меню на больших экранах */
+}
+
+.burger-icon,
+.close-icon {
+    cursor: pointer;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 920px) {
+    .burger-menu-container {
+        display: flex;
+        background-color: #444;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .close-icon {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #444;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav a {
+        padding: 2em 2em;
+    }
+
+    nav.open {
+        display: flex;
+        transform: translateX(0);
+    }
+
+
+    .active {
+        padding: 2em 27em;
+    }
+
+    #close-menu {
+        align-self: end;
+        padding-right: 1em;
+    }
+}

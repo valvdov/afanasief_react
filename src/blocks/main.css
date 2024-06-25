@@ -1,0 +1,96 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2em 2em 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2em 2em 0;
+}
+
+.diagram {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.2fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    align-items: center;
+    justify-items: center;
+}
+
+.diagram .img_mel {
+    width: 65%;
+}
+
+.diagram .img_ton {
+    width: 80%;
+}
+
+.diagram .img_har {
+    width: 60%;
+}
+
+
+.text {
+    padding: 2em;
+}
+
+.img_tri {
+    max-width: 30%;
+    float:left;
+}
+
+.img_mel {
+    width: 25%;
+    float: left;
+}
+
+.img_ton {
+    width: 40%;
+    float: left;
+}
+
+.img_har {
+    width: 25%;
+    float: left;
+}
+
+.img_form {
+    max-width: 50%;
+}
+
+.img_bach_fon {
+    width: 100%;
+}
+
+.img_bach_fon_mel {
+    width: 100%;
+}
+
+.img_bach_fon_mel_func {
+    width: 100%;
+}
+
+.img_bach_mel {
+    width: 100%;
+}
+
+.img_bachmodul {
+    width: 100%;
+}
+
+.img_sys {
+    width: 50%;
+}
+
+.img_gamma {
+    width: 100%;
+}
+.text img {
+    max-width: 100%;
+    height: auto;
+    float: right;
+    padding: 1%;
+}
