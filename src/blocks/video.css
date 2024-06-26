@@ -1,0 +1,16 @@
+.columns {
+    display: flex;
+}
+.text_column1,
+.text_column2 {
+    flex: 1;
+    padding: 0 1em; /* Добавьте немного отступов между колонками */
+}
+iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+h3 {
+text-align: center;
+}

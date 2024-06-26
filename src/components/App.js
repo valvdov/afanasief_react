@@ -2,25 +2,30 @@ import '../App.css';
 import Main from "./Main";
 import Header from "./Header";
 import Footer from "./Footer";
+import {Route, Routes} from "react-router-dom";
+import Chaconne from "./Chaconne";
+import React from "react";
+import Biography from "./Biography";
+import Exhibitions from "./Exhibitions";
+import Gallery from "./Gallery";
+import Video from "./Video";
+import Demo from "./Demo";
 
 function App() {
   return (
-      <>
+      <div>
           <Header/>
-          <Main/>
-          {/*<Switch>*/}
-          {/*    <Route path="/" exact component={Home} />*/}
-          {/*    <Route path="/chaconne" component={Chaconne} />*/}
-          {/*    <Route path="/biography" component={Biography} />*/}
-          {/*    <Route path="/exhibitions" component={Exhibitions} />*/}
-          {/*    <Route path="/gallery" component={Gallery} />*/}
-          {/*    <Route path="/video" component={Video} />*/}
-          {/*    <Route path="/demo" component={Demo} />*/}
-          {/*    <Route path="/book" component={Book} />*/}
-          {/*    <Route path="/contacts" component={Contacts} />*/}
-          {/*</Switch>*/}
+          <Routes>
+              <Route path="/" element={<Main />} />
+              <Route path="/chaconne" element={<Chaconne />} />
+              <Route path="/biography" element={<Biography />} />
+              <Route path="/exhibitions" element={<Exhibitions />} />
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/video" element={<Video />} />
+              <Route path="/demo" element={<Demo />} />
+          </Routes>
           <Footer/>
-      </>
+      </div>
   );
 }
 

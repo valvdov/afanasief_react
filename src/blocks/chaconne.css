@@ -1,0 +1,26 @@
+section {
+    padding: 2em 2em 0;
+}
+
+.text {
+    padding: 2em;
+}
+
+.text img {
+    max-width: 100%;
+    height: auto;
+    float: right;
+    padding: 1%;
+}
+
+.img_portrait {
+    float: right;
+    padding: 1%
+}
+
+.img_chaconne {
+    float: left;
+    padding: 1%;
+    width: 20%;
+    height: 20%
+}

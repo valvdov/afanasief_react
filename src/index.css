@@ -1,3 +1,9 @@
 @import url('./blocks/main.css');
 @import url('./blocks/header.css');
 @import url('./blocks/footer.css');
+@import url('./blocks/chaconne.css');
+@import url('./blocks/biography.css');
+@import url('./blocks/exhibitions.css');
+@import url('./blocks/gallery.css');
+@import url('./blocks/video.css');
+@import url('blocks/demo.css');

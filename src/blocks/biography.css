@@ -1,0 +1,13 @@
+.columns {
+    display: flex;
+}
+.text_column1,
+.text_column2 {
+    flex: 1;
+    padding: 0 1em; /* Добавьте немного отступов между колонками */
+}
+
+ol {
+    margin-bottom: 0;
+    margin-top: 0;
+}
